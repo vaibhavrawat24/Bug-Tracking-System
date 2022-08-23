@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        function passvalue() {
+            var name = document.getElementById("username").value;
+            localStorage.setItem("index2", name);
+            return false;
+        }
+    </script>
+
+</head>
+
+<body>
+    <section class="all" id="login">
+        <div class='head'>
+            <h1 class="company">Bug Tracking System</h1>
+        </div>
+        <p class='msg'>Welcome</p>
+        <div class='form'>
+            <form action="index2.html">
+                <input type="text" placeholder='Username' class='text' id="username" required><br>
+
+                <center><input type="submit" class='btn-login' id='do-login' onclick="passvalue()" value="Login"></center>
+            </form>
+        </div>
+    </section>
+    <footer>
+        Made By Vaibhav Singh Rawat
+    </footer>
+
+
+
+</body>
+
+</html>

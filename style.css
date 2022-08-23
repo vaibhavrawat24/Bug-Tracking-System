@@ -1,0 +1,68 @@
+body {
+    background: #91c0f0;
+    font-family: arial;
+    display: flex;
+    min-height: 90vh;
+}
+
+.all {
+    color: white;
+    background: linear-gradient(to right, #267871, #be2cb2);
+    margin: auto;
+    box-shadow: 60px 20px 40px rgba(0, 0, 0, 0.2), 0px 10px 20px rgba(0, 0, 0, 0.3), 0px 30px 60px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.all .head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.company {
+    font-size: 30px;
+}
+
+.msg {
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.form input[type=text].text {
+    border: none;
+    background: none;
+    box-shadow: 0px 2px 0px 0px white;
+    width: 100%;
+    color: white;
+    font-size: 1em;
+    outline: none;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.form .text::placeholder {
+    color: #D3D3D3;
+}
+
+.form .btn-login {
+    background: none;
+    color: white;
+    box-shadow: 0px 0px 0px 2px white;
+    border-radius: 50px;
+    padding: 5px 25px;
+}
+
+.form .btn-login:hover {
+    background: white;
+    color: dimgray;
+    transition: 0.5s;
+}
+
+footer {
+    position: absolute;
+    color: #094f5c;
+    bottom: 10px;
+    padding-left: 20px;
+}

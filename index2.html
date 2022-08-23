@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Main Page
+    </title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+
+    <div>
+        <nav>
+
+            <div class="logo" id="side"><img src="bug1.jpg" id="bug1"></div>
+            <input type="checkbox" id="click" display:none>
+            <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+            </label>
+
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallary</a></li>
+            </ul>
+        </nav>
+
+
+        <section id="home">
+            <div id="hello">
+                Hello, <span id="result"></span>
+                <script>
+                    document.getElementById("result").innerHTML = localStorage.getItem("index2");
+                </script>
+            </div>
+
+            <div id="title">
+                Bug Tracking System
+            </div>
+            <table>
+                <tr>
+                    <td>
+                        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                            <div>
+                                <label>Title</label><label class="validation-error hide" id="titValidationError">This field is required.</label>
+                                <input type="text" name="title" id="tit" placeholder="Title">
+
+                            </div>
+                            <div>
+                                <label>Type</label>
+                                <input type="text" name="type" id="type" placeholder="Type">
+                            </div>
+                            <div>
+                                <label>Employee</label>
+                                <input type="text" name="emp" id="emp" placeholder="Employee Name">
+                            </div>
+                            <div>
+                                <label>Mobile No.</label>
+                                <input type="text" name="num" id="num" placeholder="Mobile NO.">
+                            </div>
+                            <div class="submitbutton">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </form>
+                    </td>
+                    <td>
+                        <table class="list" id="employeeList">
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Type</th>
+                                    <th>emp</th>
+                                    <th>Mobile No.</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section id="about">
+            <h1>About</h1>
+            <p>Bug tracking is the process of logging and monitoring bugs or errors during software testing. It is also referred to as defect tracking or issue tracking. Large systems may have hundreds or thousands of defects. Each needs to be evaluated,
+                monitored and prioritized for debugging. In some cases, bugs may need to be tracked over a long period of time.<br><br> “Defect tracking is an important process in software engineering, as complex and business critical systems have hundreds
+                of defects,” says Tutorials Point. “One of the challenging factors is managing, evaluating and prioritizing these defects. The number of defects gets multiplied over a period of time and to effectively manage them, a defect tracking system
+                is used to make the job easier." </p>
+        </section>
+        <section id="gallery">
+            <h1>Gallery</h1>
+            <p>
+                <img src="bug3.jpg" id="picleft">
+                <img src="bug4.jpg" id="picright">
+            </p>
+        </section>
+        <footer>
+            Made By Priyanshu Bhatt
+        </footer>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>

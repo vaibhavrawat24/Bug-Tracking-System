@@ -1,0 +1,236 @@
+body {
+    background: linear-gradient(to right, #3a1477, #bd2942);
+    display: block;
+    font-family: Courier;
+    font-size: 18px;
+}
+
+#hello {
+    text-align: right;
+    margin: 15px 30px;
+    font-size: 18px;
+    font-style: italic;
+    color: white;
+}
+
+#title {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(247, 223, 227);
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #31cc0a;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+#bug1 {
+    height: 70px;
+}
+
+#table {
+    margin-top: 80px;
+}
+
+body>table {
+    width: 80%;
+}
+
+table {
+    margin-top: 40px;
+}
+
+table.list {
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even),
+table.list thead>tr {
+    background-color: #dddddd;
+}
+
+input[type=text],
+input[type=number] {
+    width: 100%;
+    padding: 8px 50px;
+    margin: 5px 0;
+    display: flex;
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+input[type=submit] {
+    width: 30%;
+    background-color: #ddd;
+    color: #000;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form div.submitbutton {
+    text-align: center;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0000ee;
+    margin-right: 4px;
+}
+
+label.validation-error {
+    color: red;
+    margin-left: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+.submitbutton:hover {
+    background: white;
+    color: dimgray;
+    transition: 0.5s;
+}
+
+.side {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+nav {
+    height: 80px;
+    background: #1b1b1b;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 100px;
+}
+
+nav .logo {
+    font-size: 33px;
+    color: white;
+    font-weight: 600;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background: none;
+    color: cyan;
+    transition: 0.4s;
+    border-radius: 20px;
+    text-decoration: underline;
+    text-decoration-color: orange;
+}
+
+nav ul {
+    position: fixed;
+    top: 80px;
+    left: 100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+    transition: all 0.4s;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 80px 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+nav .menu-btn i {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#click:checked~ul {
+    left: 0%;
+}
+
+#click {
+    display: none;
+}
+
+#click:checked~.menu-btn i:before {
+    content: "\f00d";
+}
+
+table {
+    color: black;
+    background: linear-gradient(to right, #48a17c, #d46acc);
+    margin: auto;
+    box-shadow: 60px 20px 40px rgba(0, 0, 0, 0.2), 0px 10px 20px rgba(0, 0, 0, 0.3), 0px 30px 60px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 50px;
+}
+
+section h1 {
+    font-size: 60px;
+    color: white;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+
+section#about {
+    background: url('https://source.unsplash.com/bZZp1PmHI0E/1600x900') no-repeat center center/cover;
+}
+
+section#gallery {
+    background: rgb(16, 133, 133);
+}
+
+#picleft {
+    float: left;
+    height: 350px;
+    width: 400px;
+}
+
+#picright {
+    float: right;
+    height: 350px;
+    margin-left: 20px;
+}
+
+footer {
+    background: linear-gradient(to bottom, rgb(16, 133, 133), blue);
+    color: rgb(46, 6, 6);
+    height: 50px;
+}
